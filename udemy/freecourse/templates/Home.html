@@ -1,0 +1,36 @@
+{% extends "base.html"%}
+
+{% block body %}
+<div id="row" style="
+    display:grid;
+    grid-template-rows: auto; background-color: aliceblue;margin:10vh 20vw 10vh 20vw;">
+    <div style='margin:20px; text-align: center;'>
+<h1>{{course.fullname}}</h1>
+<h3>Created By </h3>
+<h4>{{course.Author}}</h4>
+
+</div>
+
+
+</div>
+<div style="border:1px solid black ; border-radius: 10px; padding:15px; margin:10vh 20vw 10vh 20vw">
+    <h2>How to Use  a coupon</h2>
+    <ol>
+        <li>Copy the  Coupon code Given Below</li>
+        <li>Click on the given Getlink button</li>
+        <li>On  Next Page ,Click on enroll me to Course button  </li>
+        <li>You will redirect to udemy page </li>
+        <li>Apply a Copied Coupon Code to apply Coupon section on udemy page</li>
+    </ol>
+</div>
+
+<div id="Code">
+    <h1 style="background-color: cadetblue; text-align:center; margin:10vh 20vw 10vh 20vw">{{course.Code}}</h1>
+</div>
+
+<div >
+    <center><a style="text-decoration: none; background-color: #2793d5; color:black; border-radius: 20px;" href="enroll/{{course.Name}}">Getlink </a></center>
+</div>
+
+
+{% endblock %}
